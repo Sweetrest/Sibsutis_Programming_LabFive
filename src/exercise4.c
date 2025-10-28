@@ -8,12 +8,12 @@ int main(int argc, char *argv[]){
         scanf("%f ", &arr[i]);
     }
     int k =atoi(argv[2]);
-    float x =atoi(argv[1]);
+    float x =strtod(argv[1],NULL);
     for (int i=0;i<size;i++){
-        if(i==k-1){
+        if(i==k){
             arr[i]=x;
         }
-        printf("%f ",arr[i]);
+        printf("%g ",arr[i]);
     }
     printf("\n");
 return 0;
